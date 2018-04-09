@@ -1,1 +1,126 @@
-/* You can add global styles to this file, and also import other style files */
+.main-container{
+  margin-top: 40px;
+}
+
+.rojo{
+  color: red;
+}
+
+
+.respuesta{
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+
+
+.slidecontainer {
+    width: 800px; /* Width of the outside container */
+
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 600px;
+    height: 8px; /* Specified height */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    background: black;
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    cursor: pointer; /* Cursor on hover */
+    border: 6px solid black;
+    background:white;
+    z-index: 500;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.lin{
+  display:inline-block;
+  vertical-align: middle;
+}
+.borde{
+  margin:0;
+  padding:0;
+  width:20px;
+  height: 20px;
+  background:black;
+  margin-top: 3px;
+}
+
+.derecho{
+  margin-left: -5px;
+}
+
+.izquierdo{
+  margin-right: -5px;
+}
+
+.rojo{
+  padding: 30px;
+  background: red;
+  color:white;
+  width: 200px;
+}
+.verde{
+  padding: 30px;
+  background: green;
+  color:white;
+  width: 200px;
+}
+.azul{
+  padding: 30px;
+  background: blue;
+  color:white;
+  width: 200px;
+}
+.amarillo{
+  padding: 30px;
+  background: yellow;
+  color:white;
+  width: 200px;
+}
+
+.bordes{
+  padding: 50px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+
+.contenedor{
+    width:500px;
+    height:200px;
+    background:#fff;
+    padding: 10px;
+    border: 10px solid #2c3e50;
+    margin: 20px;
+    display: flex;
+}
+.elemento{
+  color:#fff;
+  margin: 5px;
+  background: #e67e22;
+  text-align: center;
+  width: 50px;
+}

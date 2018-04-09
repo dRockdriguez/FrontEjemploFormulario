@@ -1,0 +1,407 @@
+<div class="container bordes">
+  <h2>fxLayout</h2>
+  <hr>
+  <h3>Column</h3>
+  <div fxLayout="column">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>Row</h3>
+  <div fxLayout="row">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>row-reverse</h3>
+  <div fxLayout="row-reverse">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>column-reverse</h3>
+  <div fxLayout="column-reverse">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+</div>
+
+<div class="container bordes">
+  <h2>fxLayoutAlign</h2>
+  <hr>
+
+  <h3>row and align center</h3>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>column and align center</h3>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>start</h3>
+  <div fxLayout="row" fxLayoutAlign="start">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>end</h3>
+  <div fxLayout="row" fxLayoutAlign="end">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>space-around</h3>
+  <div fxLayout="row" fxLayoutAlign="space-around">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>space-between</h3>
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>space-evenly</h3>
+  <div fxLayout="row" fxLayoutAlign="space-evenly">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+</div>
+
+<div class="container bordes">
+
+  <h2>fxLayoutGap</h2>
+  <hr>
+
+  <h3>row and fxLayoutGap 20px</h3>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+
+  <hr>
+
+  <h3>column and fxLayoutGap 20px</h3>
+  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div class="rojo">1. One</div>
+    <div class="azul">2. Two</div>
+    <div class="verde">3. Three</div>
+    <div class="amarillo">4. Four</div>
+  </div>
+</div>
+
+<div class="container bordes">
+
+  <!--<div fxShow.sm="false"  fxShow.gt-md="false" fxShow="true" > No se muestra en pantallas sm. En tamaños gt hasta md tampoco </div>-->
+    <div fxLayout.xs="column" fxLayout.md="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+      <div class="rojo">1. One</div>
+      <div class="azul">2. Two</div>
+      <div class="verde">3. Three</div>
+      <div class="amarillo">4. Four</div>
+    </div>
+</div>
+
+<div class="container bordes">
+
+  <div fxLayout='column' class="zero">
+
+    <div fxFlex="33" [fxFlex.md]="box1Width" class="one" ></div>
+    <div fxFlex="33" [fxLayout]="direction" fxLayout.md="row" class="two">
+
+      <div fxFlex="22"    fxFlex.md="10px" fxHide.lg                       class="two_one"></div>
+      <div fxFlex="205px" fxFlex.md="65"                                    class="two_two"></div>
+      <div fxFlex="30px"  fxFlex.md="25"   fxShow [fxHide.md]="hideBox"   class="two_three"></div>
+
+    </div>
+    <div fxFlex class="three"></div>
+
+  </div>
+</div>
+
+
+<div class="contenedor">
+    <div class="elemento">1</div>
+    <div class="elemento">2</div>
+    <div class="elemento">3</div>
+    <div class="elemento">4</div>
+</div>
+
+
+<!--<h4>{{ 'HOME.TITLE' | translate }} <small>{{ 'HOME.SUBTITLE' | translate }}</small></h4>
+<hr>
+<div fxShow fxShow.xs="false" fxHide.sm="false">
+   <form [formGroup]="forma" (ngSubmit)="submit()" novalidate>
+   <div>
+      <div class="form-group row">
+         <label class="col-2 col-form-label" [ngClass]="{'rojo': forma.controls.nombre.invalid && forma.controls.nombre.touched }">Nombre</label>
+         <div class="col-8">
+            <div class="input-group is-invalid">
+               <input class="form-control"
+                  type="text"
+                  placeholder="Nombre"
+                  formControlName="nombre">
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.nombre.errors?.required) && forma.controls.nombre.touched">
+               El nombre es obligatorio
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.nombre.errors?.minlength) && forma.controls.nombre.touched">
+               La longitud debe ser mayor que {{ forma.controls.nombre.errors.minlength.requiredLength }}
+            </div>
+         </div>
+      </div>
+      <div class="form-group row">
+         <label class="col-2 col-form-label" [ngClass]="{'rojo': forma.controls.apellido.invalid && forma.controls.apellido.touched }">Apellido</label>
+         <div class="col-8">
+            <div class="input-group is-invalid">
+               <input class="form-control"
+                  type="text"
+                  placeholder="Apellido"
+                  formControlName="apellido">
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.apellido.errors?.required) && forma.controls.apellido.touched">
+               El apellido es obligatorio
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.apellido.errors?.minlength) && forma.controls.apellido.touched">
+               La longitud debe ser mayor que {{ forma.controls.apellido.errors.minlength.requiredLength }}
+            </div>
+         </div>
+      </div>
+      <div class="form-group row">
+         <label class="col-2 col-form-label" [ngClass]="{'rojo': forma.controls.correo.invalid && forma.controls.correo.touched }">Correo</label>
+         <div class="col-md-8">
+            <div class="input-group is-invalid">
+               <input class="form-control"
+                  type="email"
+                  placeholder="Correo electrónico"
+                  formControlName="correo">
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.correo.errors?.required) && forma.controls.correo.touched">
+               El correo es obligatorio
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.correo.errors?.pattern) && forma.controls.correo.touched">
+               Debe ser un formato de correo válido
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="form-group row">
+      <label class="col-2 col-form-label">&nbsp;</label>
+      <div class="input-group col-md-8">
+         <button type="submit" class="btn btn-outline-primary"
+            [disabled]="forma.invalid">
+         Guardar
+         </button>
+      </div>
+   </div>
+   </form>
+</div>
+
+
+
+
+<div fxHide fxShow.xs="true">
+   <form [formGroup]="forma" (ngSubmit)="submit()" novalidate>
+   <div>
+      <div class="form-group row" *ngIf="campo == 1">
+         <label class="col-2 col-form-label" [ngClass]="{'rojo': forma.controls.nombre.invalid && forma.controls.nombre.touched }">Nombre</label>
+         <div class="col-8">
+            <div class="input-group is-invalid">
+               <input class="form-control"
+                  type="text"
+                  placeholder="Nombre"
+                  formControlName="nombre">
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.nombre.errors?.required) && forma.controls.nombre.touched">
+               El nombre es obligatorio
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.nombre.errors?.minlength) && forma.controls.nombre.touched">
+               La longitud debe ser mayor que {{ forma.controls.nombre.errors.minlength.requiredLength }}
+            </div>
+         </div>
+      </div>
+      <div class="form-group row" *ngIf="campo == 2">
+         <label class="col-2 col-form-label" [ngClass]="{'rojo': forma.controls.apellido.invalid && forma.controls.apellido.touched }">Apellido</label>
+         <div class="col-8">
+            <div class="input-group is-invalid">
+               <input class="form-control"
+                  type="text"
+                  placeholder="Apellido"
+                  formControlName="apellido">
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.apellido.errors?.required) && forma.controls.apellido.touched">
+               El apellido es obligatorio
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.apellido.errors?.minlength) && forma.controls.apellido.touched">
+               La longitud debe ser mayor que {{ forma.controls.apellido.errors.minlength.requiredLength }}
+            </div>
+         </div>
+      </div>
+      <div class="form-group row" *ngIf="campo == 3">
+         <label class="col-2 col-form-label" [ngClass]="{'rojo': forma.controls.correo.invalid && forma.controls.correo.touched }">Correo</label>
+         <div class="col-md-8">
+            <div class="input-group is-invalid">
+               <input class="form-control"
+                  type="email"
+                  placeholder="Correo electrónico"
+                  formControlName="correo">
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.correo.errors?.required) && forma.controls.correo.touched">
+               El correo es obligatorio
+            </div>
+            <div class="rojo" *ngIf="(forma.controls.correo.errors?.pattern) && forma.controls.correo.touched">
+               Debe ser un formato de correo válido
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="form-group row"  *ngIf="campo == 3">
+      <label class="col-2 col-form-label">&nbsp;</label>
+      <div class="input-group col-md-8">
+         <button type="submit" class="btn btn-outline-primary"
+            [disabled]="forma.invalid">
+         Guardar
+         </button>
+      </div>
+   </div>
+   <div fxShow fxShow.xs="true" fxHide.sm="true" *ngIf="campo > 1">
+      <button class="btn btn-outline-danger" (click)="anterior()">
+      Anterior...
+      </button>
+   </div>
+   <div fxShow fxShow.xs="true" fxHide.sm="true"  *ngIf="campo != 3">
+      <button class="btn btn-outline-danger" (click)="siguienteCampo()"
+      [disabled]="campo > 3">
+      Siguiente campo...
+      </button>
+   </div>
+   </form>
+</div>
+
+
+<div fxShow fxShow.xs="false" fxHide.sm="false">
+   <br><br>
+   <label>Es válido  -- </label> {{ forma.valid }}
+   <br><br>
+   <div class="respuesta" *ngIf="respuesta.length > 0">
+      {{ respuesta }}
+   </div>
+   <br><br>
+   <form (ngSubmit)="onSubirFichero(subirFichero)" [formGroup]="formaFichero" novalidate>
+   <div class="form-group">
+      <input
+         type="file"
+         formControlName="fichero"
+         (change)="getFiles($event)"
+         required
+         class="form-control-file">
+      <input type="submit" value="Enviar" [disabled]="!subido">
+   </div>
+   </form>
+   <br><br>
+   <div class="respuesta" *ngIf="respuestaFichero.length > 0">
+      {{ respuestaFichero }}
+   </div>
+   <br><br>
+   <button class="btn btn-outline-danger" (click)="siguiente()"
+   [disabled]="respuesta.length <= 0  || !ficheroSubido">
+   Siguiente...
+   </button>
+</div>
+
+
+
+<div fxHide fxShow.xs="true" *ngIf="campo == 3">
+   <br><br>
+   <label >Es válido  -- </label> {{ forma.valid }}
+   <br><br>
+   <div class="respuesta" *ngIf="respuesta.length > 0">
+      {{ respuesta }}
+   </div>
+   <br><br>
+
+   <div fxShow fxShow.xs="true" fxHide.sm="true" *ngIf="campo != 3">
+      <button class="btn btn-outline-danger" (click)="siguienteCampo()"
+      >
+      Siguiente campo...
+      </button>
+   </div>
+
+   <form (ngSubmit)="onSubirFichero(subirFichero)" [formGroup]="formaFichero" novalidate *ngIf="respuesta.length > 0">
+   <div class="form-group">
+      <input
+         type="file"
+         formControlName="fichero"
+         (change)="getFiles($event)"
+         required
+         class="form-control-file">
+      <input type="submit" value="Enviar" [disabled]="!subido">
+   </div>
+   </form>
+
+</div>
+
+<input type="range" min="0" max="40" value="40" class="slider" id="myRange"  step="10">
+
+<!--<div class="slidecontainer">
+  <div class="borde lin izquierdo"></div>
+  <div class="lin">
+    <input type="range" min="0" max="40" value="40" class="slider" id="myRange"  step="10">
+  </div>
+  <div class="borde lin derecho"></div>
+</div>
+
+<br>
+<br>
+<button class="btn btn-outline-danger" (click)="slider()"
+>
+valorSlider
+</button>
+-->
